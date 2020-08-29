@@ -29,6 +29,9 @@ module.exports = {
     }
 };
 ```
-
+## Webpack実行
+```ps1
+./node_modules/.bin/webpack
+```
 ### 参考
 #### [webpackとは？使い方と導入するメリットをわかりやすく解説](https://goworkship.com/magazine/how-to-webpack/)
