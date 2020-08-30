@@ -36,7 +36,7 @@ export default function module1(word1) {
     return word1 + "(これは)";
 }
 ```
-#### `module1.js`の作成
+#### `module2.js`の作成
 ```js
 export default function module2(word2) {
     return word2 + "(ペンです。)";
