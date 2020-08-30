@@ -29,6 +29,42 @@ module.exports = {
     }
 };
 ```
+## JavaScriptファイルの作成
+#### `module1.js`の作成
+```js
+export default function module1(word1) {
+    return word1 + "(これは)";
+}
+```
+#### `module1.js`の作成
+```js
+export default function module2(word2) {
+    return word2 + "(ペンです。)";
+}
+```
+#### `app.js`の作成
+```js
+import module1 from './module1';
+import module2 from './module2';
+
+//変数を定義します
+var word1 = "This is";
+var word2 = " a pen.";
+
+//関数に変数を投入します
+var returnedWord1 = module1(word1);
+var returnedWord2 = module2(word2);
+
+//結果をまとめて表示します
+var addedWords = returnedWord1 + returnedWord2;
+
+console.log(addedWords);
+```
+## HTMLファイルの作成(確認用)
+```html
+<meta charset="utf-8"/>
+<script src="bundle.js"></script>
+```
 ## Webpack実行
 ```ps1
 ./node_modules/.bin/webpack
